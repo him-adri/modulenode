@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple To-Do App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
+
+      .logout {
+        border: none;
+        background-color: orange;
+        color: black;
+        transition: 0.3s ease-in-out;
+        padding: 15px;
+        border-radius: 10px;
+      }
+      .logout:hover {
+        background-color: orangered;
+        color: white;
+      }
+      .btnFlex {
+        display: flex;
+        justify-content: space-between;
+        float: right;
+        margin-right: 10px;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Prosto One", cursive;
+        font-size: 3rem;
+        margin-top: 1rem;
+      }
+      .profile-form {
+        padding: 2rem;
+        margin: 2rem;
+        margin-bottom: 2rem;
+        align-items: center;
+      }
+      label {
+        margin: 1rem;
+      }
+      input {
+        width: 100%;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Profile Section</h1>
+    <form action="/logout" method="POST" class="btnFlex">
+      <button class="logout">Logout</button>
+    </form>
+    <div class="container">
+      <form class="profile-form">
+        <label for="">Name</label>
+        <input type="text" value="" name="name" />
+        <br />
+        <label for="">Username</label>
+        <input type="text" name="username" />
+        <br />
+        <label for="">Email</label>
+        <input type="text" />
+        <br />
+        <label for="">Phone Number</label>
+        <input type="text" />
+        <br />
+        <label for="">Profile Photo</label>
+        <input type="file" />
+        <br />
+        <label for="">State</label>
+        <input type="text" />
+        <br />
+        <label for="">Country</label>
+        <input type="text" />
+        <br />
+        <label> Collage name for graduation</label>
+        <input type="text" />
+        <br />
+      </form>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/browser.js"></script>
+  </body>
+</html>
